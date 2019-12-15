@@ -14,6 +14,7 @@ namespace LinkenInLearningApp
             Console.WriteLine("Enter your name: ");
             string userName = Console.ReadLine();
             Console.WriteLine($"Hello {userName}");
+            //remember to use run without debug
         }   
     }
 }
