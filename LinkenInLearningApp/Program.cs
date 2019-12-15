@@ -8,9 +8,18 @@ namespace LinkenInLearningApp
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        public static int myScore = 1000;
 
+        static void Main(string[] args)
+        { 
+            
+ 
+        }
+
+        public static void ChangeScore(int myScore)
+        {
+            myScore = myScore + 100;
+            Console.WriteLine($"Player score : { myScore }");
         }
     }
 }
