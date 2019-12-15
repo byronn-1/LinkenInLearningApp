@@ -16,7 +16,9 @@ namespace LinkenInLearningApp
 
             Console.WriteLine($"Subtotal: {subtotal}");
 
-            CalculateTax(0.8);
+            double total = subtotal + CalculateTax(0.08);
+
+            Console.WriteLine($"Total: {total}");
         }
 
         public static double CalculateTax(double taxRate)
