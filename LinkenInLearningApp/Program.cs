@@ -8,15 +8,15 @@ namespace LinkenInLearningApp
 {
     class Program
     {
-        public static int myScore = 1000;
+        public static int myScore;
 
         static void Main(string[] args)
-        { 
-            
- 
+        {
+            myScore = 1000;
+            ChangeScore();
         }
 
-        public static void ChangeScore(int myScore)
+        public static void ChangeScore()
         {
             myScore = myScore + 100;
             Console.WriteLine($"Player score : { myScore }");
