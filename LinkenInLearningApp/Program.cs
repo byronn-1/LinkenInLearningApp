@@ -17,6 +17,10 @@ namespace LinkenInLearningApp
             pet.Speak();
 
             Console.WriteLine($"{pet.petName} is {pet.GetAge()} years old.");
+
+            Lynx wildPet = new Lynx();
+            wildPet.petName = "Fred";
+            wildPet.Growl();
         }   
     }
 }
