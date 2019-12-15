@@ -13,12 +13,17 @@ namespace LinkenInLearningApp
         static void Main(string[] args)
         {
             myScore = 1000;
+            Console.WriteLine($"setting the score to {myScore}");
             DisplayScore();
             ChangeScore(100);
+            ChangeScore(50);
+            ChangeScore(-250);
+            ChangeScore(125);
         }
 
         public static void ChangeScore(int scoreDelta)
         {
+            Console.WriteLine($"changing the score by {scoreDelta}");
             myScore = myScore + scoreDelta;
             DisplayScore();
         }
