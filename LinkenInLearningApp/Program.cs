@@ -8,25 +8,12 @@ namespace LinkenInLearningApp
 {
     class Program
     {
-        public static double subtotal;
 
         static void Main(string[] args)
         {
-            subtotal = 15.00;
-
-            Console.WriteLine($"Subtotal: {subtotal}");
-
-            double total = subtotal + CalculateTax(0.08, subtotal);
-
-            Console.WriteLine($"Total: {total}");
-        }
-
-        public static double CalculateTax(double taxRate, double amountToTax)
-        {
-            double tax = amountToTax * taxRate;
-            Console.WriteLine($"Tax: {tax}");
-
-            return tax;
-        }
+            Console.WriteLine("Enter your name: ");
+            string userName = Console.ReadLine();
+            Console.WriteLine($"Hello {userName}");
+        }   
     }
 }
