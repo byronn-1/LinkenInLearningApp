@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LinkenInLearningApp;
 
 namespace LinkenInLearningApp
 {
@@ -11,10 +12,9 @@ namespace LinkenInLearningApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name: ");
-            string userName = Console.ReadLine();
-            Console.WriteLine($"Hello {userName}");
-            //remember to use run without debug
+            Cat pet = new Cat();
+            pet.petName = "Rocket";
+            pet.Speak();
         }   
     }
 }
