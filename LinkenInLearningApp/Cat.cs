@@ -9,6 +9,7 @@ namespace LinkenInLearningApp
     class Cat
     {
         public string petName;
+        private int age; 
 
         public Cat()
         {
@@ -18,6 +19,11 @@ namespace LinkenInLearningApp
         public void Speak()
         {
             Console.WriteLine($"{petName} says, \"Meow\"");
+        }
+
+        public int GetAge()
+        {
+            return age;
         }
     }
 }
