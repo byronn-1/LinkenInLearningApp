@@ -8,30 +8,23 @@ namespace LinkenInLearningApp
 {
     class Program
     {
-        public static int myScore;
+        public static double subtotal;
 
         static void Main(string[] args)
         {
-            myScore = 1000;
-            Console.WriteLine($"setting the score to {myScore}");
-            DisplayScore();
-            ChangeScore(100);
-            ChangeScore(50);
-            ChangeScore(-250);
-            ChangeScore(125);
+            subtotal = 15.00;
+
+            Console.WriteLine($"Subtotal: {subtotal}");
+
+            CalculateTax(0.8);
         }
 
-        public static void ChangeScore(int scoreDelta)
+        public static double CalculateTax(double taxRate)
         {
-            Console.WriteLine($"changing the score by {scoreDelta}");
-            myScore = myScore + scoreDelta;
-            DisplayScore();
-        }
+            double tax = subtotal* taxRate;
+            Console.WriteLine($"Tax: {tax}");
 
-        public static void DisplayScore()
-        {
-            Console.WriteLine($"Player score : { myScore }");
-
+            return tax;
         }
     }
 }
